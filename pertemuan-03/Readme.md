@@ -3,7 +3,7 @@
 ## Baseline
 
 - Menggunakan hasil P2 sebagai dasar pengembangan P2
-- Menyalin 'index.html' dan
+- Menyalin 'index.html' dan 'img/foto-profil.jpg'ke'pertemuan-03/'.
 
 ## Implementasi Formulir
 
@@ -27,10 +27,10 @@ Selector elemen: p, ol, h2, label, input, form
 ## Pengujian dan Perbaikan
 
 - Galat yang ditemukan: Tidak ada / Validasi email tidak berfungsi saat awal
-- Penyebab galat: [Lupa menambahkan atribut required dan type="email"
+- Penyebab galat: "Lupa menambahkan atribut required dan type="email"
+- Penyebab galat: Lupa menambahkan atribut required dan type="email"
 - Perbaikan yang dilakukan: Menambahkan atribut required pada semua input wajib dan memastikan type email
 - Hasil pengujian ulang: Form berhasil divalidasi oleh browser dan semua data terkirim dengan benar
 
 ## GitHub Pages
-
-URL: https://tika213jaemin.github.io/2622500041-PWD-SI1J-26270/pertemuan-03/
+URL: https://github.com/tika213jaemin/2622500041-PWD-SI1J-2627O.git
