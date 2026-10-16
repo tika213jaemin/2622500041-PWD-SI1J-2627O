@@ -12,6 +12,4 @@ const tampilkanKlik = () => {
 console.log("Tombol diklik."); 
 }; 
 tampilkanKlik(); 
-<script> 
   console.log("JavaScript berhasil dijalankan."); 
-</script>   
