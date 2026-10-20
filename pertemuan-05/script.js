@@ -1,6 +1,7 @@
-const navToggle = document.getElementById("navToggle"); 
+console.log("script.js berhasil dijalankan.");
+const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu"); 
- 
+
 navToggle.addEventListener("click", () => { 
   const isOpen = navMenu.classList.toggle("nav-open"); 
  
@@ -24,7 +25,8 @@ const prodiInput = document.getElementById("prodi");
 const pesanInput = document.getElementById("pesan"); 
  
 contactForm.addEventListener("submit", (event) => { 
-  event.preventDefault();
+  event.preventDefault(); 
+ 
   formFeedback.className = "form-feedback-error"; 
  
   const nama = namaInput.value.trim(); 
@@ -93,4 +95,4 @@ contactForm.addEventListener("reset", () => {
  
 contactForm.addEventListener("input", () => { 
   formFeedback.textContent = ""; 
-}); 
+});
