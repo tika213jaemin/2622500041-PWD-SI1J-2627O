@@ -11,7 +11,10 @@ $semester = 2;
 $ipk = 3.75; 
 $statusAktif = true; 
 $catatanTambahan = null; 
-?>
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar"; 
+const PROFIL_GITHUB = "satpamal"; 
+
+?> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
