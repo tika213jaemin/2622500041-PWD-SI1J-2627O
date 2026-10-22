@@ -209,7 +209,7 @@ switch ($programStudi) {
         </section>
     </main>
     <footer>
-           <p>&copy; 2026 Atikah Lutfiah Ramadhani Rahman [2622500041]</p>
+        <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p>
      </footer>
     <script src="script.js"></script>
 </body>
