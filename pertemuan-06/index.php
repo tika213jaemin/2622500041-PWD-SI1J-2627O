@@ -102,6 +102,9 @@ switch ($programStudi) {
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p> 
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p> 
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
+                <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; 
+                 ?>
+                </p> 
                 <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
                    <?php 
