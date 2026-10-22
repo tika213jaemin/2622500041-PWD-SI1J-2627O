@@ -81,8 +81,17 @@ switch ($programStudi) {
         </section>
 
         <section id="about">
-            <h2>Tentang Saya</h2>-
-
+            <h2>Tentang Saya</h2>
+            <ol>
+                <li>Nama: <?php echo $namaMahasiswa; ?></li>
+                <li>NIM: <?php echo $nim; ?></li>
+                <li>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></li>
+                <li>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></li>
+                <li>IPK: <?php echo $ipk; ?></li>
+                <li>Status Mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></li>
+                <li>Sisa Semester hingga Batas: <?php echo $sisaSemester; ?></li>
+                <li>Pemeriksaan Rentang Semester: <?php echo $statusSemester; ?></li>
+        </ol> 
             <article>
                 <h3>Profil Singkat</h3>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p> 
@@ -92,7 +101,7 @@ switch ($programStudi) {
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p> 
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p> 
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
-                <h3>Target Belajar</h3>
+                <h3>Target Belajar (Perulangan for)</h3>
                 <ol>
                    <?php 
                    // Perulangan for tanpa array; materi larik dibahas pada P9. 
@@ -118,6 +127,16 @@ switch ($programStudi) {
                              echo "</li>"; 
                         } 
                          ?> 
+
+                         <h3>Semester (Perulangan while):</h3> 
+                        <ol> 
+                          <?php 
+                          $nomorSemester = 1; 
+                          while ($nomorSemester <= 3) { 
+                            echo "<li>Semester " . $nomorSemester . "</li>"; 
+                            $nomorSemester++; // operator penugasan 
+                        } 
+                        ?> 
                 </ol>
             </article>
         </section>
