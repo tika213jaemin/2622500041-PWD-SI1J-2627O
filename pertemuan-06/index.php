@@ -3,8 +3,8 @@
 <?php 
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
-$nim = "0344300002"; 
-$namaMahasiswa = "Yohanes Setiawan Japriadi"; 
+$nim = "2622500041"; 
+$namaMahasiswa = "Atikah Lutfiah Ramadhani Rahman"; 
 $programStudi = "SI"; 
 $tahunAkademik = "2026/2027"; 
 $semester = 2; 
@@ -45,6 +45,9 @@ const PROFIL_GITHUB = "satpamal";
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
+            <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; 
+            ?>.</p> 
             <p>Halo, saya Atikah Lutfiah Ramadhani Rahman. Saya sedang mempelajari Pemrograman Web Dasar.</p>
             <img src="img/foto-profil.jpg" width="200" height="150" alt="Foto profil Atikah Lutfiah Ramadhani Rahman" />
         </section>
@@ -73,7 +76,7 @@ const PROFIL_GITHUB = "satpamal";
 
             <p>
                 Kunjungi
-                <a href="https://github.com/tika213jaemin/2622500041-PWD-SI1J-2627O.git">profil GitHub saya</a>.
+                <a target="_blank" href="https://github.com/tika213jaemin/2622500041-PWD-SI1J-2627O.git"><?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
             </p>
             <form id="contactForm" action="index.html" method="get" novalidate>
                 <div class="form-group">
