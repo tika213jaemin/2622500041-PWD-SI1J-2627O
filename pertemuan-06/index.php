@@ -93,6 +93,7 @@ switch ($programStudi) {
                 <li>Pemeriksaan Rentang Semester: <?php echo $statusSemester; ?></li>
         </ol> 
             <article>
+                <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
                 <h3>Profil Singkat</h3>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p> 
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p> 
