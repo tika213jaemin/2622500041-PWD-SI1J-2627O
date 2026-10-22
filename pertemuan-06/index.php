@@ -81,7 +81,7 @@ switch ($programStudi) {
         </section>
 
         <section id="about">
-            <h2>Tentang Saya</h2>
+            <h2>Tentang Saya</h2>-
 
             <article>
                 <h3>Profil Singkat</h3>
@@ -94,13 +94,34 @@ switch ($programStudi) {
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
                 <h3>Target Belajar</h3>
                 <ol>
-                    <li>Memahami struktur HTML5.</li>
-                    <li>Menyusun halaman web semantik.</li>
-                    <li>Memvalidasi dokumen HTML.</li>
+                   <?php 
+                   // Perulangan for tanpa array; materi larik dibahas pada P9. 
+                    for ($i = 1; $i <= 5; $i++) { 
+                        echo "<li>Target belajar ke-" . $i . ": "; 
+                        switch ($i) { 
+                          case 1: 
+                            echo "Memahami sintaks dasar PHP."; 
+                            break; 
+                          case 2: 
+                            echo "Menggunakan variabel dan konstanta."; 
+                            break; 
+                          case 3: 
+                            echo "Menerapkan operator dan percabangan."; 
+                            break; 
+                          case 4: 
+                            echo "Menggunakan perulangan for dan while."; 
+                            break; 
+                        default: 
+                            echo "Belum dipetakan"; 
+                            break; 
+                        } 
+                             echo "</li>"; 
+                        } 
+                         ?> 
                 </ol>
             </article>
         </section>
-
+        
 
 
 
