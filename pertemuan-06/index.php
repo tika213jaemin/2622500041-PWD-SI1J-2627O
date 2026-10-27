@@ -12,7 +12,7 @@ $ipk = 3.75;
 $statusAktif = true; 
 $catatanTambahan = null; 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar"; 
-const PROFIL_GITHUB = "satpamal"; 
+const PROFIL_GITHUB = "profil GitHub saya"; 
 
 // Bagian 2: Operator 
 $batasSemester = 8; 
@@ -73,10 +73,9 @@ switch ($programStudi) {
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
+            Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah 
             <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; 
-            ?>.</p> 
-            <p>Halo, saya Atikah Lutfiah Ramadhani Rahman. Saya sedang mempelajari Pemrograman Web Dasar.</p>
+            ?>
             <img src="img/foto-profil.jpg" width="200" height="150" alt="Foto profil Atikah Lutfiah Ramadhani Rahman" />
         </section>
 
@@ -153,7 +152,7 @@ switch ($programStudi) {
 
             <p>
                 Kunjungi
-                <a target="_blank" href="https://github.com/tika213jaemin/2622500041-PWD-SI1J-2627O.git"><?= PROFIL_GITHUB ?>">profil GitHub saya</a>.
+                <a target="_blank" href="https://github.com/tika213jaemin/2622500041-PWD-SI1J-2627O.git"><?= PROFIL_GITHUB ?></a>.
             </p>
             <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
