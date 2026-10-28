@@ -1,5 +1,5 @@
 # pertemuan-07 -Pengembangan Formulir PHP
-Lokasi proyek: C:\laragon\www\PWD\2627\SI1J\2622500041-PWD-SI1J-2627O\pertemuan-07
+Lokasi proyek: C:\laragon\pertemuan-07
 Layanan server: Apache 2.4.68 (port 80) dan MySQL 8.4.3 (port 3306).
 Status pengujian: Layanan Apache dan MySQL berhasil dijalankan melalui Laragon.
 Alamat akses: http://localhost/PWD/2627/SI1J/2622500041-PWD-SI1J-2627O/pertemuan-07/
@@ -28,3 +28,8 @@ Kesimpulan
 Pengembangan P7 menggunakan PHP dengan Laragon sebagai lingkungan server lokal. Halaman Profil Mahasiswa telah dibuat dengan berkas PHP, CSS, JavaScript, dan foto profil. Pengujian lanjutan masih diperlukan untuk memastikan foto profil tampil dengan benar dan halaman berjalan sesuai kebutuhan.
 
 penggunaan tanda ? untuk pemisah parameter pertama, tanda & untuk pemisah parameter berikutnya, dan URL encoding seperti %40 untuk @
+### Hasil Pengujian Pengiriman Formulir GET
+Atribut method="get" pada formulir menentukan bahwa data dikirim sebagai parameter URL.
+Parameter pada URL diawali dengan tanda ? setelah alamat halaman dan dipisahkan dengan tanda &.
+PHP membaca nilai parameter URL tersebut menggunakan $_GET.
+Jika kolom wajib dikosongkan atau diisi tidak valid, pesan validasi muncul dan formulir tidak terkirim.
