@@ -33,3 +33,7 @@ Atribut method="get" pada formulir menentukan bahwa data dikirim sebagai paramet
 Parameter pada URL diawali dengan tanda ? setelah alamat halaman dan dipisahkan dengan tanda &.
 PHP membaca nilai parameter URL tersebut menggunakan $_GET.
 Jika kolom wajib dikosongkan atau diisi tidak valid, pesan validasi muncul dan formulir tidak terkirim.
+### Demonstrasi GET dan Perubahan ke POST
+Berkas pertemuan-07/indexGet.php tersedia sebagai artefak demonstrasi pengiriman data formulir menggunakan metode GET.
+Berkas pertemuan-07/index.php diubah menggunakan method="post" agar data dikirim melalui request body, bukan melalui parameter URL.
+Atribut action="index.php" menentukan berkas tujuan pemrosesan data.
