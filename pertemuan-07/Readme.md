@@ -26,3 +26,5 @@ Perubahan foto profil telah dikirim menggunakan perintah Git setelah file gambar
 
 Kesimpulan
 Pengembangan P7 menggunakan PHP dengan Laragon sebagai lingkungan server lokal. Halaman Profil Mahasiswa telah dibuat dengan berkas PHP, CSS, JavaScript, dan foto profil. Pengujian lanjutan masih diperlukan untuk memastikan foto profil tampil dengan benar dan halaman berjalan sesuai kebutuhan.
+
+penggunaan tanda ? untuk pemisah parameter pertama, tanda & untuk pemisah parameter berikutnya, dan URL encoding seperti %40 untuk @
