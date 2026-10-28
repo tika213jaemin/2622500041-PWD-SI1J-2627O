@@ -37,3 +37,8 @@ Jika kolom wajib dikosongkan atau diisi tidak valid, pesan validasi muncul dan f
 Berkas pertemuan-07/indexGet.phptersedia sebagai artefak demonstrasi pengiriman data formulir menggunakan metode GET.
 Berkas pertemuan-07/index.php diubah menggunakan method="post" agar data dikirim melalui request body, bukan melalui parameter URL.
 Atribut action="index.php" menentukan berkas tujuan pemrosesan data.
+
+Berkas PHP dapat membaca nilai nama yang dikirim dari $_POST dan mempresentasikannya sebagai teks HTML.
+Kode baru telah memproses parameter nama dari pengiriman formulir POST secara berhasil.
+
+Hasil pengujian pengisian seluruh input formulir (termasuk memilih kedua topik minat HTML & CSS).   Hasil pengujian validasi JavaScript saat hanya memilih 1 topik minat (HTML saja atau CSS saja)
