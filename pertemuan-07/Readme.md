@@ -42,3 +42,53 @@ Berkas PHP dapat membaca nilai nama yang dikirim dari $_POST dan mempresentasika
 Kode baru telah memproses parameter nama dari pengiriman formulir POST secara berhasil.
 
 Hasil pengujian pengisian seluruh input formulir (termasuk memilih kedua topik minat HTML & CSS).   Hasil pengujian validasi JavaScript saat hanya memilih 1 topik minat (HTML saja atau CSS saja)
+
+Pengolahan Formulir dengan PHP
+
+Nama: Atikah Lutfiah Ramadhani Rahman
+NIM: 2622500041
+Program Studi: Sistem Informasi
+Mata Kuliah: Pemrograman Web Dasar
+
+## Deskripsi
+
+Pada pertemuan 7 ini, saya mempelajari cara mengolah data formulir menggunakan PHP. Data yang dimasukkan melalui formulir akan diproses menggunakan metode GET dan POST. Saya juga mempelajari cara memeriksa data agar sesuai dengan ketentuan sebelum ditampilkan.
+
+## tujuan
+Memahami penggunaan metode GET dan POST.
+Mengolah data yang dikirim melalui formulir.
+Membuat validasi untuk memastikan data sudah diisi dengan benar.
+Memahami cara menampilkan hasil input menggunakan PHP.
+
+## Struktur Folder
+
+pertemuan-07/
+├── index.php
+├── indexGet.php
+├── style.css
+├── script.js
+├── README.md
+└── img/
+    └── foto-profil.jpg
+
+## Cara Menjalankan Program
+Buka aplikasi Laragon.
+Pastikan Apache sudah berjalan.
+Buka folder proyek pertemuan-07 melalui VS Code.
+Jalankan program melalui browser menggunakan alamat localhost sesuai lokasi folder proyek.
+
+Isi formulir dan tekan tombol kirim untuk melihat hasil pengolahan data.
+
+## Hasil Pengerjaan
+Dalam pengerjaan P7, saya membuat dan mempelajari beberapa bagian, yaitu:
+Penggunaan metode GET dan POST untuk mengirim data formulir.
+Pengambilan data menggunakan variabel $_GET dan $_POST.
+Validasi untuk memeriksa data yang wajib diisi.
+Pemeriksaan format email dan semester.
+Pemeriksaan pilihan jenis pesan, program studi, dan minat.
+Menampilkan pesan kesalahan apabila data yang dimasukkan belum sesuai.
+Pengujian dilakukan dengan mencoba mengirim formulir dalam kondisi kosong dan mengisi formulir dengan data yang sesuai. Dari pengujian tersebut, saya dapat melihat apakah validasi sudah berjalan dan apakah data dapat diproses dengan benar.
+
+## Kendala dan Perbaikan
+Selama pengerjaan, saya menemukan beberapa kesalahan, seperti penulisan nama variabel yang tidak konsisten dan tanda kurung kurawal PHP yang belum lengkap. Kesalahan tersebut diperbaiki dengan menyamakan nama variabel dan melengkapi struktur kode PHP.
+Kesimpulan: Melalui tugas P7 ini, saya menjadi lebih memahami cara kerja formulir menggunakan PHP, terutama dalam menerima, memeriksa, dan mengolah data yang dikirim oleh pengguna. Saya juga belajar bahwa validasi diperlukan agar data yang diterima sesuai dengan ketentuan program.
