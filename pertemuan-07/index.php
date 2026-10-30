@@ -11,7 +11,7 @@ $minat = $_POST['minat'] ?? [];
 
 $pesanKesalahan = ''; 
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') { 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    if (trim($nama ?? '') === '') { 
       $pesanKesalahan .= 'Nama lengkap wajib diisi. '; 
     } 
