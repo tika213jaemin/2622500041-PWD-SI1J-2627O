@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } 
  
     if (trim($pesan) === '') { 
-      $pesanKesalahan .= ' Jenis pesan wajib diisi. '; 
+      $pesanKesalahan .= ' Pesan wajib diisi. '; 
     } 
     if ($jenisPesan !== '' && !in_array($jenisPesan, ['pertanyaan', 'saran'], true)) {
       $pesanKesalahan .= 'Jenis pesan tidak valid. ';
