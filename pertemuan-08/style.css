@@ -1,0 +1,338 @@
+* {
+                box-sizing: border-box;
+        }
+
+    body {
+                margin: 0;
+                padding: 15px;
+                font-family: Arial, sans-serif;
+                color: #161a21;
+                background-color: hsl(313, 93%, 57%);
+        }
+
+    header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                background-color: #2e64f7;
+                color: white;
+                padding: 25px;
+                border: 2px solid #00264d;
+                text-align: center;
+                margin-bottom: 25px;
+        }
+
+    .logo {
+                width: 75px;
+                height: 75px;
+                min-width: 75px;
+                border-radius: 50%;
+                background-color: white;
+                color: #003366;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 30px;
+                font-weight: bold;
+        }
+
+    .header-text h1 {
+                margin: 5px;
+                font-size: 30px;
+        }
+
+    .header-text p {
+                margin: 8px;
+                font-size: 18px;
+        }   
+
+    .layout {
+                display: grid;
+                grid-template-columns: 320px minmax(0, 1fr);
+                gap: 25px;
+                align-items: stretch;
+        }
+
+    nav {
+                width: 100%;
+                background-color: #003366;
+                color: white;
+                padding: 25px 15px;
+                border-radius: 5px;
+                height: 100%;
+                align-self: stretch;
+        }
+
+    nav h3 {
+                text-align: center;
+                margin: 10px 0 30px;
+                font-size: 25px;
+        }
+
+    nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+        }
+
+    nav li {
+                display: block;
+                width: 100%;
+                margin: 15px 0;
+                padding: 0;
+        }
+
+    nav a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-height: 75px;
+                padding: 20px 10px;
+                color: white;
+                text-decoration: none;
+                font-size: 21px;
+                font-weight: bold;
+                text-align: center;
+                background-color: #1f4e78;
+                border-radius: 6px;
+                transition: 0.3s;
+        }
+
+    nav a:hover {
+                background-color: #2e64f7;
+        }
+
+    main {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 25px;
+                min-width: 0;
+        }   
+
+    section {
+                width: 100%;
+                min-width: 0;
+                background-color: white;
+                border: 1px solid #d0d7de;
+                border-radius: 5px;
+                padding: 25px;
+        }
+
+    section h2 {
+                color: #003366;
+                border-bottom: 2px solid #003366;
+                padding-bottom: 10px;
+                margin-top: 0;
+                margin-bottom: 20px;
+        }
+
+    section h3 {
+                color: #1f4e78;
+                margin-top: 25px;
+        }
+
+    section p {
+                line-height: 1.7;
+                margin-bottom: 15px;
+        }
+
+    .galeri-hobi {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 15px;
+                margin-top: 20px;
+        }
+
+    .galeri-hobi img {
+                display: block;
+                width: 100%;
+                height: 300px;
+                object-fit: contain;
+                object-position: center;
+                background-color: white;
+                border: 2px solid #cbd5e1;
+                border-radius: 6px;
+                padding: 5px;
+        }
+
+    .foto-profil {
+                display: block;
+                width: 230px;
+                max-width: 100%;
+                max-height: 300px;
+                height: auto;
+                object-fit: contain;
+                border: 2px solid #cbd5e1;
+                border-radius: 5px;
+                margin: 15px auto;
+        }
+
+    #pendaftaran {
+                grid-column: 1 / -1;
+                background-color: #f8fafc;
+        }
+
+        #pendaftaran label {
+                display: block;
+                font-weight: bold;
+                margin-top: 15px;
+                color: #1f2937;
+        }
+
+        #pendaftaran input,
+        #pendaftaran select,
+        #pendaftaran textarea {
+                display: block;
+                width: 100%;
+                padding: 12px;
+                margin-top: 7px;
+                border: 1px solid #94a3b8;
+                border-radius: 4px;
+                font-family: Arial, sans-serif;
+                font-size: 15px;
+        }
+
+        #pendaftaran textarea {
+                resize: vertical;
+                min-height: 100px;
+        }
+
+        #pendaftaran button {
+                background-color: #003366;
+                color: white;
+                font-weight: bold;
+                padding: 12px 22px;
+                margin-top: 18px;
+                margin-right: 8px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+        }
+
+        #pendaftaran button:hover {
+                background-color: #2e64f7;
+        }
+
+        #formFeedback {
+                font-weight: bold;
+                margin-top: 12px;
+        }
+
+        .form-feedback-success {
+                color: green;
+        }
+
+        .form-feedback-error {
+                color: red;
+        }
+
+        .form-feedback-success,
+        .form-feedback-error {
+             line-height: 1.6;
+        }
+
+        footer {
+                background-color: #003366;
+                color: white;
+                text-align: center;
+                padding: 18px;
+                margin-top: 25px;
+                border-radius: 5px;
+        } 
+
+        footer p {
+    margin: 5px;
+    line-height: 1.5;
+        }
+
+@media (max-width: 1000px) {
+        .layout {
+                grid-template-columns: 260px minmax(0, 1fr);
+                gap: 15px;
+        }
+
+        main {
+             grid-template-columns: 1fr;
+        }
+
+         #pendaftaran {
+             grid-column: 1;
+    }
+}
+
+@media (max-width: 600px) {
+         body {
+             padding: 8px;
+        }
+
+        header {
+                flex-direction: column;
+                padding: 20px 10px;
+        }
+
+    .header-text h1 {
+                font-size: 26px;
+         }
+
+    .header-text p {
+             font-size: 16px;
+         }
+
+    .layout {
+                grid-template-columns: 1fr;
+                gap: 15px;
+        }
+
+    nav {
+                width: 100%;
+                height: auto;
+                padding: 20px 12px;
+    }
+
+    nav ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 8px;
+    }
+
+    nav li {
+                flex: 1 1 120px;
+                margin: 0;
+                width: auto;
+    }
+
+    nav a {
+                width: 100%;
+                min-height: 55px;
+                padding: 12px 8px;
+                font-size: 18px;
+    }
+
+    main {
+                grid-template-columns: 1fr;
+            }
+
+    section {
+                padding: 16px;
+            }
+
+    .galeri-hobi {
+                grid-template-columns: 1fr;
+            }
+
+    .galeri-hobi img {
+                height: 300px;
+            }
+
+    .foto-profil {
+                width: 200px;
+            }
+
+     #pendaftaran {
+            grid-column: 1;
+    }
+}
