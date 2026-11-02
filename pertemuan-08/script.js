@@ -2,62 +2,24 @@ console.log("script.js berhasil dijalankan.");
 
 const contactForm = document.getElementById("contactForm");
 const formFeedback = document.getElementById("formFeedback");
-const namaInput = document.getElementById("nama");
-const emailInput = document.getElementById("email");
-const tanggalInput = document.getElementById("tanggal");
-const jenisKelaminInput = document.getElementById("jenis_kelamin");
-const alamatInput = document.getElementById("alamat");
-const pesanInput = document.getElementById("pesan");
 
-contactForm.addEventListener("submit", function(event) {
-    event.preventDefault();
+if (contactForm && formFeedback) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    formFeedback.className = "form-feedback-error";
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
 
-    const nama = namaInput.value.trim();
+        const nama = document.getElementById("nama").value.trim();
 
-    if (nama.length < 3 || nama.length > 50) {
-        formFeedback.textContent = "Nama lengkap harus 3 sampai 50 karakter.";
-        return;
-    }
+        formFeedback.textContent =
+            "Terima kasih, " + nama + "! Formulir berhasil diisi.";
 
-    const email = emailInput.value.trim();
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        formFeedback.style.color = "#243b64";
+        formFeedback.style.fontWeight = "bold";
 
-    if (!emailPattern.test(email)) {
-        formFeedback.textContent = "Masukkan alamat email yang valid.";
-        return;
-    }
-
-    if (tanggalInput.value === "") {
-        formFeedback.textContent = "Tanggal lahir harus diisi.";
-        return;
-    }
-
-    if (jenisKelaminInput.value === "") {
-        formFeedback.textContent = "Pilih jenis kelamin.";
-        return;
-    }
-
-    if (alamatInput.value.trim() === "") {
-        formFeedback.textContent = "Alamat harus diisi.";
-        return;
-    }
-
-    if (pesanInput.value.trim() === "") {
-        formFeedback.textContent = "Alasan mendaftar harus diisi.";
-        return;
-    }
-
-    formFeedback.textContent = "Form berhasil divalidasi! Terima kasih, " + nama + ".";
-    formFeedback.className = "form-feedback-success";
-
-    alert("Pendaftaran berhasil divalidasi!");
-
-    contactForm.reset();
-});
-
-contactForm.addEventListener("input", function() {
-    formFeedback.textContent = "";
-    formFeedback.className = "";
-});
+        contactForm.reset();
+    });
+}
