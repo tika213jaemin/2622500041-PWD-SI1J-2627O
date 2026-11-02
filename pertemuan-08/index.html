@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Pribadi Atikah</title>
-
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header>
         <div class="logo">A</div>
+
         <div class="header-text">
             <h1>Blog Pribadi</h1>
             <p>Selamat datang di blog pribadi saya</p>
@@ -20,28 +21,28 @@
     </header>
 
     <div class="layout">
+
         <nav>
             <h3>Menu Navigasi</h3>
+
             <ul>
-                <li>
-                    <a href="#beranda">Beranda</a>
-                </li>
-                <li>
-                    <a href="#profile">Profile</a>
-                </li>
-                <li>
-                    <a href="#pendaftaran">Pendaftaran</a>
-                </li>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#pendaftaran">Pendaftaran</a></li>
             </ul>
         </nav>
+
         <main>
 
             <section id="beranda">
                 <h2>Beranda</h2>
+
                 <p>Halo, saya Atikah Lutfiah Ramadhani Rahman. Selamat datang di blog pribadi saya.</p>
 
                 <h3>Hobi Saya</h3>
+
                 <p>Hobi saya adalah menggambar. Saya senang mengisi waktu luang dengan menggambar. Selain itu, saya juga sangat suka mengabadikan beberapa foto senja.</p>
+
                 <h3>Galeri Hobi</h3>
 
                 <div class="galeri-hobi">
@@ -56,16 +57,18 @@
 
             <section id="profile">
                 <h2>Profile</h2>
+
                 <img class="foto-profil" src="img/foto-profil.jpg" alt="Foto profil Atikah Lutfiah Ramadhani Rahman">
 
                 <h3>Biodata</h3>
+
                 <p>Nama Lengkap: Atikah Lutfiah Ramadhani Rahman</p>
                 <p>NIM: 2622500041</p>
                 <p>Program Studi: Sistem Informasi</p>
                 <p>Kelas: SI1J</p>
                 <p>Semester: 1</p>
-
             </section>
+
             <section id="pendaftaran">
                 <h2>Formulir Pendaftaran</h2>
 
@@ -73,10 +76,13 @@
 
                     <label for="nama">Nama Lengkap:</label>
                     <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+
                     <label for="tanggal">Tanggal Lahir:</label>
                     <input type="date" id="tanggal" name="tanggal" required>
+
                     <label for="jenis_kelamin">Jenis Kelamin:</label>
                     <select id="jenis_kelamin" name="jenis_kelamin" required>
                         <option value="">Pilih Jenis Kelamin</option>
@@ -86,9 +92,12 @@
 
                     <label for="alamat">Alamat:</label>
                     <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
+
                     <label for="pesan">Alasan Mendaftar:</label>
                     <textarea id="pesan" name="pesan" rows="3" placeholder="Tuliskan alasan mendaftar" required></textarea>
+
                     <button type="submit">Daftar</button>
+
                     <p id="formFeedback"></p>
 
                 </form>

@@ -1,338 +1,299 @@
 * {
-                box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    body {
-                margin: 0;
-                padding: 15px;
-                font-family: Arial, sans-serif;
-                color: #161a21;
-                background-color: hsl(313, 93%, 57%);
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf0fa, #dce6f5, #f7eaf1);
+    color: #333;
+    line-height: 1.7;
+}
 
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #243b64, #5276a8, #8b9dc3);
+    color: white;
+    padding: 35px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    text-align: left;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: white;
+    color: #243b64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.header-text h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.header-text p {
+    color: #e4eaf4;
+}
+
+/* TATA LETAK */
+.layout {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+/* NAVIGASI */
+nav {
+    background: linear-gradient(180deg, #ffffff, #e9eff9);
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    border-top: 5px solid #5276a8;
+}
+
+nav h3 {
+    color: #243b64;
+    margin-bottom: 15px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 11px 13px;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #243b64;
+    color: white;
+    padding-left: 18px;
+}
+
+/* KONTEN */
+main {
+    min-width: 0;
+}
+
+section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 18px rgba(36, 59, 100, 0.12);
+    border-top: 5px solid #5276a8;
+}
+
+section h2 {
+    color: #243b64;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dce5f2;
+}
+
+section h3 {
+    color: #5276a8;
+    margin: 22px 0 12px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+/* FOTO HOBI */
+.galeri-hobi {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 25px;
+}
+
+.galeri-hobi img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.galeri-hobi img:hover {
+    transform: scale(1.03);
+}
+
+/* FOTO PROFIL */
+.foto-profil {
+    display: block;
+    width: 180px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 15px auto 25px;
+    border: 4px solid #dce5f2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* TABEL DOSEN */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #243b64;
+    color: white;
+    padding: 13px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #d8deea;
+}
+
+tbody tr:nth-child(even) {
+    background: #edf2fa;
+}
+
+tbody tr:hover {
+    background: #dce6f5;
+}
+
+/* FORMULIR */
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 6px;
+    font-weight: bold;
+    color: #243b64;
+}
+
+form input,
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd3df;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    background: #fbfcff;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #5276a8;
+    box-shadow: 0 0 5px rgba(82, 118, 168, 0.3);
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 7px;
+    background: linear-gradient(135deg, #243b64, #5276a8);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #172b4d;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #243b64, #5276a8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* TAMPILAN TABLET DAN HP */
+@media (max-width: 768px) {
     header {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-                background-color: #2e64f7;
-                color: white;
-                padding: 25px;
-                border: 2px solid #00264d;
-                text-align: center;
-                margin-bottom: 25px;
-        }
-
-    .logo {
-                width: 75px;
-                height: 75px;
-                min-width: 75px;
-                border-radius: 50%;
-                background-color: white;
-                color: #003366;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-size: 30px;
-                font-weight: bold;
-        }
-
-    .header-text h1 {
-                margin: 5px;
-                font-size: 30px;
-        }
-
-    .header-text p {
-                margin: 8px;
-                font-size: 18px;
-        }   
+        flex-direction: column;
+        text-align: center;
+    }
 
     .layout {
-                display: grid;
-                grid-template-columns: 320px minmax(0, 1fr);
-                gap: 25px;
-                align-items: stretch;
-        }
-
-    nav {
-                width: 100%;
-                background-color: #003366;
-                color: white;
-                padding: 25px 15px;
-                border-radius: 5px;
-                height: 100%;
-                align-self: stretch;
-        }
-
-    nav h3 {
-                text-align: center;
-                margin: 10px 0 30px;
-                font-size: 25px;
-        }
-
-    nav ul {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                width: 100%;
-        }
-
-    nav li {
-                display: block;
-                width: 100%;
-                margin: 15px 0;
-                padding: 0;
-        }
-
-    nav a {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                min-height: 75px;
-                padding: 20px 10px;
-                color: white;
-                text-decoration: none;
-                font-size: 21px;
-                font-weight: bold;
-                text-align: center;
-                background-color: #1f4e78;
-                border-radius: 6px;
-                transition: 0.3s;
-        }
-
-    nav a:hover {
-                background-color: #2e64f7;
-        }
-
-    main {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 25px;
-                min-width: 0;
-        }   
-
-    section {
-                width: 100%;
-                min-width: 0;
-                background-color: white;
-                border: 1px solid #d0d7de;
-                border-radius: 5px;
-                padding: 25px;
-        }
-
-    section h2 {
-                color: #003366;
-                border-bottom: 2px solid #003366;
-                padding-bottom: 10px;
-                margin-top: 0;
-                margin-bottom: 20px;
-        }
-
-    section h3 {
-                color: #1f4e78;
-                margin-top: 25px;
-        }
-
-    section p {
-                line-height: 1.7;
-                margin-bottom: 15px;
-        }
+        grid-template-columns: 1fr;
+        width: 94%;
+    }
 
     .galeri-hobi {
-                display: grid;
-                grid-template-columns: repeat(2, minmax(0, 1fr));
-                gap: 15px;
-                margin-top: 20px;
-        }
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
     .galeri-hobi img {
-                display: block;
-                width: 100%;
-                height: 300px;
-                object-fit: contain;
-                object-position: center;
-                background-color: white;
-                border: 2px solid #cbd5e1;
-                border-radius: 6px;
-                padding: 5px;
-        }
+        height: 220px;
+    }
 
-    .foto-profil {
-                display: block;
-                width: 230px;
-                max-width: 100%;
-                max-height: 300px;
-                height: auto;
-                object-fit: contain;
-                border: 2px solid #cbd5e1;
-                border-radius: 5px;
-                margin: 15px auto;
-        }
+    section {
+        padding: 20px;
+    }
 
-    #pendaftaran {
-                grid-column: 1 / -1;
-                background-color: #f8fafc;
-        }
+    table {
+        font-size: 13px;
+    }
 
-        #pendaftaran label {
-                display: block;
-                font-weight: bold;
-                margin-top: 15px;
-                color: #1f2937;
-        }
-
-        #pendaftaran input,
-        #pendaftaran select,
-        #pendaftaran textarea {
-                display: block;
-                width: 100%;
-                padding: 12px;
-                margin-top: 7px;
-                border: 1px solid #94a3b8;
-                border-radius: 4px;
-                font-family: Arial, sans-serif;
-                font-size: 15px;
-        }
-
-        #pendaftaran textarea {
-                resize: vertical;
-                min-height: 100px;
-        }
-
-        #pendaftaran button {
-                background-color: #003366;
-                color: white;
-                font-weight: bold;
-                padding: 12px 22px;
-                margin-top: 18px;
-                margin-right: 8px;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-        }
-
-        #pendaftaran button:hover {
-                background-color: #2e64f7;
-        }
-
-        #formFeedback {
-                font-weight: bold;
-                margin-top: 12px;
-        }
-
-        .form-feedback-success {
-                color: green;
-        }
-
-        .form-feedback-error {
-                color: red;
-        }
-
-        .form-feedback-success,
-        .form-feedback-error {
-             line-height: 1.6;
-        }
-
-        footer {
-                background-color: #003366;
-                color: white;
-                text-align: center;
-                padding: 18px;
-                margin-top: 25px;
-                border-radius: 5px;
-        } 
-
-        footer p {
-    margin: 5px;
-    line-height: 1.5;
-        }
-
-@media (max-width: 1000px) {
-        .layout {
-                grid-template-columns: 260px minmax(0, 1fr);
-                gap: 15px;
-        }
-
-        main {
-             grid-template-columns: 1fr;
-        }
-
-         #pendaftaran {
-             grid-column: 1;
+    th,
+    td {
+        padding: 8px;
     }
 }
 
-@media (max-width: 600px) {
-         body {
-             padding: 8px;
-        }
-
-        header {
-                flex-direction: column;
-                padding: 20px 10px;
-        }
-
-    .header-text h1 {
-                font-size: 26px;
-         }
-
-    .header-text p {
-             font-size: 16px;
-         }
-
-    .layout {
-                grid-template-columns: 1fr;
-                gap: 15px;
-        }
-
-    nav {
-                width: 100%;
-                height: auto;
-                padding: 20px 12px;
-    }
-
-    nav ul {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-                gap: 8px;
-    }
-
-    nav li {
-                flex: 1 1 120px;
-                margin: 0;
-                width: auto;
-    }
-
-    nav a {
-                width: 100%;
-                min-height: 55px;
-                padding: 12px 8px;
-                font-size: 18px;
-    }
-
-    main {
-                grid-template-columns: 1fr;
-            }
-
-    section {
-                padding: 16px;
-            }
-
+@media (max-width: 420px) {
     .galeri-hobi {
-                grid-template-columns: 1fr;
-            }
+        grid-template-columns: 1fr;
+    }
 
     .galeri-hobi img {
-                height: 300px;
-            }
-
-    .foto-profil {
-                width: 200px;
-            }
-
-     #pendaftaran {
-            grid-column: 1;
+        height: 250px;
     }
 }
