@@ -11,7 +11,6 @@ body {
     line-height: 1.7;
 }
 
-/* HEADER */
 header {
     background: linear-gradient(135deg, #243b64, #5276a8, #8b9dc3);
     color: white;
@@ -34,6 +33,7 @@ header {
     align-items: center;
     font-size: 30px;
     font-weight: bold;
+    flex-shrink: 0;
 }
 
 .header-text h1 {
@@ -45,7 +45,6 @@ header {
     color: #e4eaf4;
 }
 
-/* TATA LETAK */
 .layout {
     width: 90%;
     max-width: 1100px;
@@ -56,7 +55,6 @@ header {
     align-items: start;
 }
 
-/* NAVIGASI */
 nav {
     background: linear-gradient(180deg, #ffffff, #e9eff9);
     padding: 22px;
@@ -93,7 +91,6 @@ nav a:hover {
     padding-left: 18px;
 }
 
-/* KONTEN */
 main {
     min-width: 0;
 }
@@ -123,29 +120,54 @@ section p {
     margin-bottom: 12px;
 }
 
-/* FOTO HOBI */
 .galeri-hobi {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
+    gap: 25px;
     margin-top: 25px;
+    align-items: start;
 }
 
-.galeri-hobi img {
+.galeri-hobi figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    min-width: 0;
+}
+
+.galeri-hobi figure img {
+    display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 14px;
+    border-radius: 10px;
     border: 4px solid white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
-.galeri-hobi img:hover {
+.galeri-hobi figure img:hover {
     transform: scale(1.03);
 }
 
-/* FOTO PROFIL */
+.galeri-hobi figure figcaption {
+    display: block;
+    position: static;
+    width: 100%;
+    padding: 12px 8px 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #243b64;
+    line-height: 1.6;
+}
+
 .foto-profil {
     display: block;
     width: 180px;
@@ -157,7 +179,6 @@ section p {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-/* TABEL DOSEN */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -177,6 +198,7 @@ th {
 td {
     padding: 12px;
     border: 1px solid #d8deea;
+    overflow-wrap: anywhere;
 }
 
 tbody tr:nth-child(even) {
@@ -187,7 +209,6 @@ tbody tr:hover {
     background: #dce6f5;
 }
 
-/* FORMULIR */
 form {
     width: 100%;
 }
@@ -241,7 +262,70 @@ form button:hover {
     transform: translateY(-2px);
 }
 
-/* FOOTER */
+#formFeedback {
+    margin-top: 12px;
+    color: #243b64;
+    font-weight: bold;
+}
+
+.rekap-pendaftaran {
+    margin-top: 35px;
+    padding-top: 25px;
+    border-top: 2px solid #dce5f2;
+}
+
+.rekap-pendaftaran h3 {
+    color: #243b64;
+    margin-bottom: 10px;
+}
+
+.rekap-pendaftaran p {
+    margin-bottom: 15px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.tabel-rekap {
+    width: 100%;
+    min-width: 750px;
+    border-collapse: collapse;
+    background: white;
+}
+
+.tabel-rekap th {
+    background: #243b64;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tabel-rekap td {
+    padding: 12px;
+    border: 1px solid #d8deea;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+.tabel-rekap tbody tr:nth-child(even) {
+    background: #edf2fa;
+}
+
+.tabel-rekap tbody tr:hover {
+    background: #dce6f5;
+}
+
+.tabel-rekap .data-kosong {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
 footer {
     background: linear-gradient(135deg, #243b64, #5276a8);
     color: white;
@@ -254,7 +338,6 @@ footer p {
     margin: 0;
 }
 
-/* TAMPILAN TABLET DAN HP */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -270,7 +353,7 @@ footer p {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .galeri-hobi img {
+    .galeri-hobi figure img {
         height: 220px;
     }
 
@@ -293,7 +376,11 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .galeri-hobi img {
+    .galeri-hobi figure img {
         height: 250px;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
     }
 }

@@ -1,45 +1,36 @@
-# pertemuan-08 - Blog Pribadi
+# P8 - Blog Pribadi
 
-Website ini saya buat untuk memenuhi tugas UTS mata kuliah Pemrograman Web Dasar.
+Nama: Atikah Lutfiah Ramadhani Rahman  
+NIM: 2622500041  
+Program Studi: Sistem Informasi  
+Kelas: SI1J  
+Mata Kuliah: Pemrograman Web Dasar
 
-## Identitas
+## Deskripsi
+Proyek ini merupakan pengembangan blog pribadi yang berisi informasi profil, hobi, galeri foto, data dosen, dan formulir pendaftaran.
 
-Nama: Atikah Lutfiah Ramadhani Rahman
-
-NIM: 2622500041
-
-Program Studi: Sistem Informasi
-
-Kelas: SI1J
-
-## Tentang Website
-
-Website ini merupakan blog pribadi saya yang berisi sedikit informasi tentang diri saya, mulai dari biodata, hobi, sampai beberapa foto hasil karya menggambar dan foto senja.
-
-Saya membuat website ini sebagai latihan untuk memahami cara membuat sebuah website menggunakan HTML, CSS, JavaScript, dan PHP.
+## Struktur Folder
+- index.html : Mengarahkan pengunjung ke halaman PHP.
+- index.php : Halaman utama blog pribadi.
+- style.css : Mengatur tampilan dan desain website.
+- script.js : Mengatur interaksi formulir.
+- img/ : Menyimpan foto profil dan foto hobi.
 
 ## Fitur Website
+1. Halaman Beranda.
+2. Halaman Profile dan biodata mahasiswa.
+3. Galeri foto hobi.
+4. Tabel data dosen dan NIDN.
+5. Halaman formulir pendaftaran.
+6. Navigasi antarhalaman.
+7. Tampilan website yang responsif.
 
-- Beranda untuk menyambut pengunjung.
-- Profil yang berisi biodata saya.
-- Galeri foto hobi menggambar dan fotografi.
-- Formulir pendaftaran yang bisa diisi oleh pengunjung.
+## Pengujian
+- Membuka website melalui localhost menggunakan Laragon.
+- Menguji menu Beranda, Profile, dan Pendaftaran.
+- Memeriksa tampilan foto dan tabel dosen.
+- Menguji pengisian formulir.
+- Memastikan tampilan website dapat dibuka melalui komputer dan layar HP.
 
-## Bahasa Pemrograman yang Digunakan
-
-- HTML untuk membuat struktur website.
-- CSS untuk mengatur tampilan dan warna website.
-- JavaScript untuk validasi formulir.
-- PHP untuk memproses data formulir.
-
-## Cara Menjalankan Website
-
-1. Buka aplikasi XAMPP.
-2. Aktifkan Apache.
-3. Buka browser.
-4. Ketik alamat localhost sesuai folder tempat website disimpan.
-5. Website Blog Pribadi akan tampil di browser.
-
-## Penutup
-
-Dengan membuat website ini, saya bisa belajar lebih banyak tentang pembuatan website dan mencoba menerapkan materi yang sudah dipelajari selama perkuliahan.
+## Kesimpulan
+Website blog pribadi berhasil dibuat dan dikembangkan dengan HTML, CSS, JavaScript, dan PHP. Setiap bagian telah disusun agar mudah digunakan dan memiliki tampilan yang rapi.
